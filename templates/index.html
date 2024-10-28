@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Busca Mercado Livre</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Busca Mercado Livre</h1>
+        <input type="text" id="search_term" placeholder="Insira o produto que deseja buscar">
+        <button id="search_button">Fazer Busca</button>
+        <div id="loading" class="hidden">Busca em andamento...</div>
+        <div id="status"></div>
+        <div id="generated_sheets"></div>
+    </div>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
